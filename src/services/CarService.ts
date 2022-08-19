@@ -26,7 +26,7 @@ class CarService implements IService<ICar> {
 
   public async readOne(_id:string):Promise<ICar> {
     const Car = await this._car.readOne(_id);
-    if (!Car) throw new Error(ErrorTypes.EntityNotFound);
+    if (!Car) throw new Error(ErrorTypes.ObjectInvalid);
     return Car;
   }
 }
