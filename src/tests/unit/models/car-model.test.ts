@@ -25,17 +25,17 @@ describe('CarModel', () => {
     });
   });
 
-  describe('verifica método read', () => {
-    it('em caso de sucesso', async() => {
-      const newCar = await car.read();
-      expect(newCar).to.be.deep.equal(carMockAll);
-    });
-  });
+  // describe('verifica método read', () => {
+  //   it('em caso de sucesso', async() => {
+  //     const newCar = await car.read();
+  //     expect(newCar).to.be.deep.equal(carMockAll);
+  //   });
+  // });
 
-  describe('verifica método readOne', () => {
-    it('em caso de sucesso', async() => {
-      const newCar = await car.readOne(carMockWithId._id);
-      expect(newCar).to.be.deep.equal(carMockWithId);
-    });
-  });
+  // describe('verifica método readOne', () => {
+  //   it('em caso de sucesso', async() => {
+  //     const newCar = await car.readOne(carMockWithId._id);
+  //     expect(newCar).to.be.deep.equal(carMockWithId);
+  //   });
+  // });
 })
