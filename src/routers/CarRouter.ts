@@ -17,5 +17,6 @@ carRouter.get(
   validateId,
   (req, res) => carController.readOne(req, res),
 );
+carRouter.delete('/cars/:id', (req, res) => carController.delete(req, res));
 
 export default carRouter;
